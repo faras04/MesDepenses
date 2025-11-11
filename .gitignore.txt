@@ -1,12 +1,24 @@
-# Ignorer l'environnement virtuel
+# Environnements virtuels
 venv/
+*.egg-info/
 
-# Ignorer fichiers temporaires
+# Python
 __pycache__/
-*.pyc
+*.py[cod]
 *.pyo
+*.pyd
+
+# Fichiers IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Modèle ML
+ml/model.pkl
+
+# Logs
 *.log
 
-# Ignorer fichiers système
-.DS_Store
-.env
+# Data sensibles
+data/*.csv
